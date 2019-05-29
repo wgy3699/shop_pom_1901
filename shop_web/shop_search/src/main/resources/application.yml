@@ -1,0 +1,11 @@
+server:
+  port: 8082
+dubbo:
+  registry:
+    address: zookeeper://47.112.140.174:2181
+  application:
+    name: web_search
+  consumer:
+    check: false
+img:
+  server: http://47.112.140.174

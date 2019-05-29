@@ -1,0 +1,16 @@
+img:
+  server: http://47.112.140.174
+server:
+  port: 8083
+dubbo:
+  application:
+    name: web_item
+  registry:
+    address: zookeeper://47.112.140.174:2181
+  consumer:
+    check: false
+spring:
+  rabbitmq:
+    host: 47.112.140.174
+    port: 5672
+    virtual-host: /

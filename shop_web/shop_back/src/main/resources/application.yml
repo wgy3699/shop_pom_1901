@@ -1,0 +1,25 @@
+server:
+  port: 8080
+dubbo:
+  application:
+    name: web_back
+  registry:
+    address: zookeeper://47.112.140.174:2181
+  consumer:
+    check: false
+    #配置重试--容错机制
+    retries: 1
+    timeout: 5000
+fdfs:
+  tracker-list:
+    - 47.112.140.174:22122
+  connect-timeout: 10000
+  so-timeout: 10000
+  thumb-image:
+    height: 100
+    width: 100
+  pool:
+    jmx-enabled: false
+#图片服务器的地址
+img:
+  server: http://47.112.140.174

@@ -1,0 +1,18 @@
+spring:
+  data:
+    solr:
+      host: http://47.112.140.174:8080/solr
+  rabbitmq:
+    host: 47.112.140.174
+    virtual-host: /
+    port: 5672
+dubbo:
+  application:
+    name: service_search
+  registry:
+    address: zookeeper://47.112.140.174:2181
+  protocol:
+    port: -1
+    name: dubbo
+  provider:
+    timeout: 60000
